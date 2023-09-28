@@ -1,0 +1,422 @@
+@font-face {
+    font-family: "gilroy";
+    src: url("I:\Web Development\Major Project\Gilroy-ExtraBold.ttf");
+}
+
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+}
+
+html, body {
+      height: 100%;
+      width: 100%;
+}
+
+#main {
+    height: 100%;
+    width: 100%;
+    background-color: #AB8F97;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+#container {
+    height: 60vh;
+    width: 80vw;
+    background-color: #BFA5AB;
+    position: relative;
+    overflow: hidden;
+}
+
+#bg-img {
+    height: 100%;
+    width: 70%;
+    background-image: url("https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1064&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+#overlay {
+    height: 100%;
+    width: 100%;
+    background-color: #b4b0b036;
+}
+
+#nav {
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    top: 3.5%;
+    background-color: ;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 70px;
+    padding-left: 5%;
+    font-family: gilroy;
+    color: white;
+    font-size: 1.5vmax;
+    text-transform: uppercase;
+}
+
+
+img {
+    height: 35%;
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    opacity: 0.8;
+    object-position: 20px 0px 0px 0px;
+    object-fit: cover;
+}
+
+#part2 {
+    position: absolute;
+    top: 37%;
+    left: 10%;
+}
+
+#part2 h1{
+    color: white;
+    font-size: 3.5vw;
+    font-weight: 800;
+    font-family: gilroy;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    transform: scaleX(1.2);
+}
+
+#vertical-text {
+    z-index: 99;
+    position: absolute;
+    right:-75%;
+    font-size: 2.5vw;
+    -webkit-text-stroke-color: white;
+    -webkit-text-stroke-width: 1.5px;
+    color: transparent;
+    font-family: gilroy;
+    overflow: hidden;
+    transform: rotate(90deg);
+    letter-spacing: 10px;
+    animation-name: float;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+    animation-fill-mode: both;
+    white-space: nowrap;
+
+}
+
+@keyframes float{
+    0% {
+        top: 0;
+    }
+    100%{
+        top: 100%;
+    }
+}
+
+@media (width >= 1550px) and (max-width: 1760px) {
+    #vertical-text {
+        right: -77.5%;
+    }
+}
+
+@media (width >= 1450px) and (width < 1550px) {
+    #vertical-text {
+        right: -78.75%;
+    }
+}
+
+@media (width >= 1350px) and (width < 1450px) {
+    #vertical-text {
+        right: -80%;
+    }
+}
+
+@media (width >= 1250px) and (width < 1350px) {
+    #vertical-text {
+        right: -81.75%;
+    }
+}
+
+@media (width >= 1150px) and (width < 1250px) {
+    #vertical-text {
+        right: -83.5%;
+    }
+}
+
+@media (width >= 1050px) and (width < 1150px) {
+    #vertical-text {
+        right: -86%;
+    }
+}
+
+@media (width >= 950px) and (width < 1050px) {
+    #vertical-text {
+        right: -88.5%;
+    }
+}
+
+@media (width >= 900px) and (width < 950px) {
+    #vertical-text {
+        right: -90%;
+    }
+}
+
+@media (width >= 850px) and (width < 900px) {
+    #vertical-text {
+        right: -92.5%;
+    }
+}
+@media (width >= 800px) and (width < 850px) {
+    #vertical-text {
+        right: -94%;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media (width >= 750px) and (width < 800px) {
+    #vertical-text {
+        right: -96.3%;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 700px) and (width < 750px) {
+    #vertical-text {
+        right: -98.3%;
+    }
+
+    #part2 h1{
+        top: 55%;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 650px) and (width < 700px) {
+    #vertical-text {
+        right: -100%;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 600px) and (width < 650px) {
+    #vertical-text {
+        right: -104%;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 550px) and (width < 600px) {
+    #vertical-text {
+        right: -109.5%;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 500px) and (width < 550px) {
+    #vertical-text {
+        right: -112%;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 450px) and (width < 500px) {
+    #vertical-text {
+        right: -120%;
+    }
+
+    #part2{
+        top: 50%;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 400px) and (width < 450px) {
+    #vertical-text {
+        right: -127.75%;
+    }
+    
+    #part2{
+        top: 55%;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 375px) and (width < 400px) {
+    #vertical-text {
+        right: -135%;}
+
+        #part2{
+            top: 58%;
+        }
+    
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 350px) and (width < 375px) {
+    #vertical-text {
+        right: -139%;}
+
+        #part2{
+            top: 58%;
+        }
+    
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 325px) and (width < 350px) {
+    #vertical-text {
+        right: -144.5%;}
+
+        #part2{
+            top: 58%;
+        }
+    
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 300px) and (width < 325px) {
+    #vertical-text {
+        right: -150%;}
+
+        #part2{
+            top: 58%;
+        }
+    
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 280px) and (width < 300px) {
+    #vertical-text {
+        right: -156.5%;}
+
+        #part2{
+            top: 58%;
+        }
+    
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 260px) and (width < 280px) {
+    #vertical-text {
+        right: -161.75%;}
+      
+    #part2{
+        top: 58%;
+    }
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 200px) and (width < 260px) {
+    #vertical-text {
+        right: -200%;}
+
+        #part2{
+            top: 58%;
+        }
+    
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 175px) and (width < 200px) {
+    #vertical-text {
+        right: -215%;}
+
+        #part2{
+            top: 58%;
+        }
+    
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 160px) and (width < 175px) {
+    #vertical-text {
+        right: -230%;}
+
+        #part2{
+            top: 58%;
+        }
+    
+
+    img{
+        display: none;
+    }
+}
+
+@media (width >= 150px) and (width < 160px) {
+    #vertical-text {
+        right: -240%;}
+
+        #part2{
+            top: 58%;
+        }
+    
+
+    img{
+        display: none;
+    }
+}

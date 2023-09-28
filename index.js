@@ -1,0 +1,1 @@
+alert("Hello there! What's going on, here is a simple and beautiful webpage that I have designed.");
